@@ -5,40 +5,40 @@ export function getChipAttrs(name) {
         case CHIP_COLOR.BLACK:
             return {
                 fill: 'black',
-                y: 500,
-                x: 100,
+                x: 20,
+                y: 20,
             };
         case CHIP_COLOR.RED:
             return {
                 fill: 'red',
-                y: 500,
-                x: 200,
+                x: 20,
+                y: 120,
             };
         case CHIP_COLOR.BLUE:
             return {
                 fill: 'blue',
-                y: 500,
-                x: 300,
+                x: 20,
+                y: 220,
             };
         case CHIP_COLOR.GREEN:
             return {
                 fill: 'green',
-                y: 500,
-                x: 400,
+                x: 20,
+                y: 320,
             };
         case CHIP_COLOR.WHITE:
             return {
                 fill: 'white',
-                y: 500,
-                x: 500,
+                x: 20,
+                y: 420,
                 strokeWidth: 2,
                 stroke: 'black',
             };
         case CHIP_COLOR.GOLD:
             return {
                 fill: 'yellow',
-                y: 500,
-                x: 600,
+                x: 20,
+                y: 520,
             };
         default:
             return {};
