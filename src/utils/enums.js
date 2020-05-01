@@ -1,7 +1,23 @@
 export const STAGE_CONTAINER = 'stageContainer';
+export const CARD_COLOR = {
+    GREEN: 'green',
+    BLUE: 'blue',
+    YELLOW: 'yellow',
+};
+export const CARD_TYPE = {
+    [CARD_COLOR.GREEN]: {
+        quantity: 20,
+    },
+    [CARD_COLOR.BLUE]: {
+        quantity: 20,
+    },
+    [CARD_COLOR.YELLOW]: {
+        quantity: 20,
+    },
+};
 export const CARD = {
-    width: 180,
-    height: 250,
+    width: 100,
+    height: 160,
     name: 'Card',
 };
 export const CHIP = {
