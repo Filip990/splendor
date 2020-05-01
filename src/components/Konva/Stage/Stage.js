@@ -5,9 +5,46 @@ import { CHIP_SETUP, STAGE_CONTAINER } from "../../../utils/enums";
 
 import ChipsContainer from "../ChipsContainer/ChipsContainer";
 import CardContainer from "../CardContainer/CardContainer";
+import PlayerContainer from "../PlayerContainer/PlayerContainer";
 
 const StageContainer = () => {
   const stageRef = useRef(null);
+
+  const activePlayers = [
+    {
+      id: 1,
+      playerName: "Kulturni",
+      x: 100,
+      y: 0,
+      width: window.innerWidth - 200,
+      height: 90,
+    },
+    {
+      id: 2,
+      playerName: "Djema",
+      x: 100,
+      y: 560,
+      width: window.innerWidth - 200,
+      height: 90,
+    },
+
+    {
+      id: 3,
+      playerName: "Djemaish",
+      x: 0,
+      y: 0,
+      width: 100,
+      height: window.innerHeight,
+    },
+    {
+      id: 4,
+      playerName: "Jelen",
+      x: 1190,
+      y: 0,
+      width: 100,
+      height: window.innerHeight,
+    },
+  ];
 
   return (
     <div id={STAGE_CONTAINER}>
@@ -18,15 +55,15 @@ const StageContainer = () => {
       >
         <Layer>
           {Object.keys(CHIP_SETUP).map((name) => (
-            <Chip name={name} />
+            <Chip key={name} name={name} />
           ))}
-          {/* main game container */}
+          {activePlayers.map((player) => (
+            <PlayerContainer key={player.id} {...player} />
+          ))}
           <CardContainer />
-          {/* chips container */}
           <ChipsContainer />
         </Layer>
       </Stage>
-      ;
     </div>
   );
 };
