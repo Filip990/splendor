@@ -1,17 +1,22 @@
 import React from "react";
-import { Rect } from "react-konva";
+import { Group } from "react-konva";
+import {CARD_TYPE} from "../../../utils/enums";
+import Card from "../Card/Card";
 
-const CardContainer = (props) => {
+const CardContainer = () => {
+  const cards = Object.keys(CARD_TYPE).map(type =>  (<Card type={type}/>));
+
   return (
-    <Rect
+    <Group
       x={100}
       y={100}
       width={window.innerWidth - 300}
       strokeWidth={5}
       stroke="black"
-      fill="green"
       height={450}
-    />
+    >
+      {cards}
+    </Group>
   );
 };
 
