@@ -14,7 +14,7 @@ export function getChipAttrs(name) {
   switch (name) {
     case CHIP_COLOR.BLACK:
       return {
-        fill: "black",
+        // fill: "black",
         x: startingPositionX,
         y: 0,
       };
