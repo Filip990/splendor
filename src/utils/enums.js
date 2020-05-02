@@ -16,12 +16,12 @@ export const CARD_TYPE = {
     },
 };
 export const CARD = {
-    width: 100,
-    height: 160,
+    width: 80,
+    height: 120,
     name: 'Card',
 };
 export const CHIP = {
-    radius: 50,
+    radius: 20,
 };
 export const CHIP_COLOR = {
     BLACK: 'black',

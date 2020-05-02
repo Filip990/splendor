@@ -23,7 +23,7 @@ const StageContainer = () => {
       id: 2,
       playerName: "Djema",
       x: 100,
-      y: 560,
+      y: window.innerHeight - 90,
       width: window.innerWidth - 200,
       height: 90,
     },
@@ -39,7 +39,7 @@ const StageContainer = () => {
     {
       id: 4,
       playerName: "Jelen",
-      x: 1190,
+      x: window.innerWidth - 100,
       y: 0,
       width: 100,
       height: window.innerHeight,
@@ -54,9 +54,6 @@ const StageContainer = () => {
         ref={stageRef}
       >
         <Layer>
-          {Object.keys(CHIP_SETUP).map((name) => (
-            <Chip key={name} name={name} />
-          ))}
           {activePlayers.map((player) => (
             <PlayerContainer key={player.id} {...player} />
           ))}
