@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { Stage, Layer } from "react-konva";
-import Chip from "../Chip/Chip";
-import { CHIP_SETUP, STAGE_CONTAINER } from "../../../utils/constants";
+import { STAGE_CONTAINER } from "../../../utils/constants";
 
 import ChipsContainer from "../ChipsContainer/ChipsContainer";
 import CardContainer from "../CardContainer/CardContainer";
@@ -13,7 +12,7 @@ const StageContainer = () => {
   const activePlayers = [
     {
       id: 1,
-      playerName: "Kulturni",
+      name: "Kulturni",
       x: 100,
       y: 0,
       width: window.innerWidth - 200,
@@ -21,7 +20,7 @@ const StageContainer = () => {
     },
     {
       id: 2,
-      playerName: "Djema",
+      name: "Djema",
       x: 100,
       y: window.innerHeight - 90,
       width: window.innerWidth - 200,
@@ -30,7 +29,7 @@ const StageContainer = () => {
 
     {
       id: 3,
-      playerName: "Djemaish",
+      name: "Djemaish",
       x: 0,
       y: 0,
       width: 100,
@@ -38,7 +37,7 @@ const StageContainer = () => {
     },
     {
       id: 4,
-      playerName: "Jelen",
+      name: "Jelen",
       x: window.innerWidth - 100,
       y: 0,
       width: 100,
