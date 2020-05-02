@@ -1,6 +1,6 @@
 import React from "react";
 import { Group } from "react-konva";
-import {CHIP_SETUP} from "../../../utils/enums";
+import {CHIP_SETUP} from "../../../utils/constants";
 import Chip from "../Chip/Chip";
 
 const ChipsContainer = () => {
@@ -9,7 +9,7 @@ const ChipsContainer = () => {
   return (
     <Group
       x={window.innerWidth - 300}
-      y={100}
+      y={130}
     >
       {chips}
     </Group>

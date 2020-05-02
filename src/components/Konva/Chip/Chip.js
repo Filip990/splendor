@@ -1,6 +1,6 @@
 import React from 'react';
 import { Circle } from 'react-konva';
-import {CHIP, CHIP_COLOR} from "../../../utils/enums";
+import {CHIP, CHIP_COLOR} from "../../../utils/constants";
 import {getChipAttrs} from "../../../utils/utils";
 
 const Chip = ({ name }) => {
