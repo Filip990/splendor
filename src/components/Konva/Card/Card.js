@@ -10,21 +10,21 @@ const Card = ({ type }) => {
         case CARD_COLOR.GREEN:
             attrs =  {
                 fill: 'green',
-                x: 0,
-                y: 400,
+                x: 10,
+                y: 300,
             };
             break;
         case CARD_COLOR.YELLOW:
             attrs =  {
                 fill: 'yellow',
-                x: 0,
-                y: 200,
+                x: 10,
+                y: 150,
             };
             break;
         case CARD_COLOR.BLUE:
             attrs =  {
                 fill: 'blue',
-                x: 0,
+                x: 10,
                 y: 0,
             };
             break;

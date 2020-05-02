@@ -10,10 +10,6 @@ const CardContainer = () => {
     <Group
       x={100}
       y={100}
-      width={window.innerWidth - 300}
-      strokeWidth={5}
-      stroke="black"
-      height={450}
     >
       {cards}
     </Group>

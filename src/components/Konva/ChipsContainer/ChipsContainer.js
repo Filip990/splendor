@@ -8,12 +8,8 @@ const ChipsContainer = () => {
 
   return (
     <Group
-      x={window.innerWidth - 200}
+      x={window.innerWidth - 300}
       y={100}
-      width={100}
-      strokeWidth={5}
-      stroke="black"
-      height={450}
     >
       {chips}
     </Group>

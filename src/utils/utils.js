@@ -12,25 +12,25 @@ export function getChipAttrs(name) {
             return {
                 fill: 'red',
                 x: 20,
-                y: 120,
+                y: 70,
             };
         case CHIP_COLOR.BLUE:
             return {
                 fill: 'blue',
                 x: 20,
-                y: 220,
+                y: 120,
             };
         case CHIP_COLOR.GREEN:
             return {
                 fill: 'green',
                 x: 20,
-                y: 320,
+                y: 170,
             };
         case CHIP_COLOR.WHITE:
             return {
                 fill: 'white',
                 x: 20,
-                y: 420,
+                y: 220,
                 strokeWidth: 2,
                 stroke: 'black',
             };
@@ -38,7 +38,7 @@ export function getChipAttrs(name) {
             return {
                 fill: 'yellow',
                 x: 20,
-                y: 520,
+                y: 270,
             };
         default:
             return {};
