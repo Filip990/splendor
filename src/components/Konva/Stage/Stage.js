@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { Stage, Layer } from "react-konva";
 import Chip from "../Chip/Chip";
-import { CHIP_SETUP, STAGE_CONTAINER } from "../../../utils/enums";
+import { CHIP_SETUP, STAGE_CONTAINER } from "../../../utils/constants";
 
 import ChipsContainer from "../ChipsContainer/ChipsContainer";
 import CardContainer from "../CardContainer/CardContainer";

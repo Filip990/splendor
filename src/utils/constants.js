@@ -15,13 +15,15 @@ export const CARD_TYPE = {
         quantity: 20,
     },
 };
+export const CARD_HEIGHT = window.innerHeight / 6;
 export const CARD = {
     width: 80,
-    height: 120,
+    height: CARD_HEIGHT,
     name: 'Card',
 };
+export const CHIP_RADIUS = window.innerHeight / 30;
 export const CHIP = {
-    radius: 20,
+    radius: CHIP_RADIUS,
 };
 export const CHIP_COLOR = {
     BLACK: 'black',

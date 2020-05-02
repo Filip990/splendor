@@ -1,6 +1,6 @@
 import React from "react";
 import { Group } from "react-konva";
-import {CARD_TYPE} from "../../../utils/enums";
+import {CARD_TYPE} from "../../../utils/constants";
 import Card from "../Card/Card";
 
 const CardContainer = () => {
